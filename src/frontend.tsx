@@ -11,6 +11,7 @@ import { App } from "./App";
 // bun add router
 import {BrowserRouter, Routes, Route} from "react-router";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 const elem = document.getElementById("root")!;
 const app = (
@@ -19,6 +20,7 @@ const app = (
       <Routes>
         <Route path="/" element={<App />}/>
         <Route path="/login" element={<LoginPage />}/>
+        <Route path="/register" element={<RegisterPage />}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>
